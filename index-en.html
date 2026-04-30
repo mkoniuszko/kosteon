@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kosteon — Physiotherapy Warsaw</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="#hero" class="navbar__logo">KOSTEON</a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <nav class="navbar__nav">
+        <ul class="navbar__links">
+          <li><a href="#services" onclick="closeMenu()">Services</a></li>
+          <li><a href="#about" onclick="closeMenu()">About</a></li>
+          <li><a href="#testimonials" onclick="closeMenu()">Testimonials</a></li>
+          <li><a href="#booking" onclick="closeMenu()">Booking</a></li>
+          <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+          <li class="navbar__lang"><a href="index.html" lang="pl">PL</a></li>
+        </ul>
+        <a href="#booking" class="navbar__cta" onclick="closeMenu()">Book now →</a>
+      </nav>
+    </div>
+  </header>
+  <script>function closeMenu(){document.getElementById('nav-toggle').checked=false;}</script>
+
+  <section id="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <p class="eyebrow">PHYSIOTHERAPY · WARSAW</p>
+          <h1 class="hero__headline">Movement<br>Restored.<br>Life Reclaimed.</h1>
+          <p class="hero__subhead">Expert physiotherapy combining manual technique, rehab science and sports medicine.</p>
+          <div class="hero__ctas">
+            <a href="#booking" class="btn btn--primary">BOOK APPOINTMENT →</a>
+            <a href="#services" class="btn btn--ghost">OUR SERVICES ↓</a>
+          </div>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-number">12+</span>
+              <span class="hero__stat-label">yrs experience</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number">500+</span>
+              <span class="hero__stat-label">patients treated</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__photo-wrap">
+          <!-- Placeholder — replace with actual therapist photo (4:5, compressed JPEG)
+               Recommended source: unsplash.com/s/photos/physiotherapy
+               Path: assets/images/hero-therapist.jpg -->
+          <img
+            src="assets/images/hero-therapist.svg"
+            alt="Therapist during a physiotherapy session"
+            class="hero__photo"
+            width="600"
+            height="750"
+          >
+          <div class="hero__accent-rect" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Services ────────────────────────────────────────────── -->
+  <section id="services">
+    <div class="container">
+      <p class="eyebrow">WHAT WE TREAT</p>
+      <h2 class="section-heading">Our Services</h2>
+      <div class="services__grid">
+
+        <article class="services__card">
+          <span class="services__numeral" aria-hidden="true">01</span>
+          <span class="services__bar" aria-hidden="true"></span>
+          <h3 class="services__title">Manual Therapy</h3>
+          <p class="services__body">Joint mobilisation, soft-tissue release and myofascial techniques to restore full range of motion. Effective for neck, back and limb pain.</p>
+          <a href="#booking" class="services__link">Learn more →</a>
+        </article>
+
+        <article class="services__card">
+          <span class="services__numeral" aria-hidden="true">02</span>
+          <span class="services__bar" aria-hidden="true"></span>
+          <h3 class="services__title">Rehabilitation</h3>
+          <p class="services__body">Post-op and post-injury programmes guided by certified physiotherapists. We rebuild function step by step.</p>
+          <a href="#booking" class="services__link">Learn more →</a>
+        </article>
+
+        <article class="services__card">
+          <span class="services__numeral" aria-hidden="true">03</span>
+          <span class="services__bar" aria-hidden="true"></span>
+          <h3 class="services__title">Sports Physiotherapy</h3>
+          <p class="services__body">Biomechanics, injury prevention and performance optimisation for athletes and recreational sports enthusiasts.</p>
+          <a href="#booking" class="services__link">Learn more →</a>
+        </article>
+
+        <article class="services__card">
+          <span class="services__numeral" aria-hidden="true">04</span>
+          <span class="services__bar" aria-hidden="true"></span>
+          <h3 class="services__title">Dry Needling / Kinesiotaping</h3>
+          <p class="services__body">Trigger-point dry needling paired with therapeutic kinesiotaping for effective pain and muscle tension management.</p>
+          <a href="#booking" class="services__link">Learn more →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── About ───────────────────────────────────────────────── -->
+  <section id="about">
+    <div class="container">
+      <div class="about__grid">
+
+        <!-- Photo column — replace src with real therapist photo (4:5, compressed JPEG) -->
+        <figure class="about__photo-col">
+          <img
+            src="assets/images/about-therapist.svg"
+            alt="Kosteon physiotherapist during a patient session"
+            class="about__photo"
+            width="480"
+            height="600"
+          >
+          <!-- Replace caption with therapist's name and primary credential -->
+          <figcaption class="about__caption">Jan Kowalski MSc · Physiotherapist</figcaption>
+        </figure>
+
+        <div class="about__bio-col">
+          <p class="eyebrow">ABOUT US</p>
+          <h2 class="section-heading">About Kosteon</h2>
+          <!-- Replace bio with real therapist biography -->
+          <p class="about__bio">Kosteon is a physiotherapy clinic founded by a therapist with 12 years of clinical experience. We specialise in manual therapy, post-operative rehabilitation and sports physiotherapy, combining modern techniques with a personalised approach to every patient.</p>
+          <!-- Replace list with real qualifications and certifications -->
+          <ul class="about__credentials">
+            <li>MSc Physiotherapy, Warsaw University of Physical Education</li>
+            <li>Manual Therapy Certificate — Maitland Method</li>
+            <li>Dry Needling Course</li>
+            <li>Kinesiotaping Poland Certificate</li>
+          </ul>
+          <a href="#booking" class="btn btn--ghost">Book a consultation →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Testimonials ─────────────────────────────────────────── -->
+  <section id="testimonials">
+    <div class="container">
+      <p class="eyebrow">PATIENT STORIES</p>
+      <h2 class="section-heading">Patient Reviews</h2>
+      <div class="testimonials__list">
+
+        <!-- Replace with real patient testimonial -->
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">After three manual therapy sessions, the back pain I had suffered from for years practically disappeared. Professional approach and real results — I wholeheartedly recommend this clinic.</p>
+          <footer class="testimonial__footer">
+            <cite class="testimonial__author">— Anna W., patient since 2023</cite>
+            <span class="testimonial__treatment">Manual Therapy</span>
+          </footer>
+        </blockquote>
+
+        <!-- Replace with real patient testimonial -->
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">My post-knee-surgery rehabilitation went smoothly and without pain. The therapist perfectly adapted the treatment plan to my abilities and continuously refined the exercises.</p>
+          <footer class="testimonial__footer">
+            <cite class="testimonial__author">— Marek P., patient since 2024</cite>
+            <span class="testimonial__treatment">Post-operative Rehabilitation</span>
+          </footer>
+        </blockquote>
+
+        <!-- Replace with real patient testimonial -->
+        <blockquote class="testimonial">
+          <p class="testimonial__quote">As an amateur runner dealing with overuse injuries, I'm now back to training at full strength. Sports physiotherapy here is a completely different level from anything I've tried before.</p>
+          <footer class="testimonial__footer">
+            <cite class="testimonial__author">— Katarzyna L., patient since 2024</cite>
+            <span class="testimonial__treatment">Sports Physiotherapy</span>
+          </footer>
+        </blockquote>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Booking ─────────────────────────────────────────── -->
+  <section id="booking">
+    <div class="container">
+      <h2 class="booking__heading">Book an Appointment</h2>
+      <p class="booking__sub">Choose the platform you prefer.</p>
+      <div class="booking__grid">
+
+        <!-- LEFT: Booksy widget -->
+        <div class="booking__widget">
+          <!-- TODO: Replace with Booksy embed code from the clinic's Booksy Business account -->
+          <div class="booking__placeholder">
+            <span class="booking__placeholder-label">BOOKSY WIDGET PLACEHOLDER</span>
+            <p class="booking__placeholder-note">Insert the Booksy widget embed code (script + div) from the Booksy Business dashboard here.</p>
+          </div>
+        </div>
+
+        <!-- RIGHT: ZnanyLekarz widget -->
+        <div class="booking__widget">
+          <!-- TODO: Replace with ZnanyLekarz embed code from the clinic's ZnanyLekarz profile -->
+          <div class="booking__placeholder">
+            <span class="booking__placeholder-label">ZNANY LEKARZ WIDGET PLACEHOLDER</span>
+            <p class="booking__placeholder-note">Insert the ZnanyLekarz widget embed code from the clinic's ZnanyLekarz profile here.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ─────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact__grid">
+
+        <div class="contact__details">
+          <h2 class="contact__heading">Contact</h2>
+          <ul class="contact__list">
+            <li class="contact__item">
+              <span class="contact__icon" aria-hidden="true">⊙</span>
+              <!-- TODO: Replace with actual clinic address -->
+              <span>ul. Przykładowa 12, 00-001 Warsaw</span>
+            </li>
+            <li class="contact__item">
+              <span class="contact__icon" aria-hidden="true">✉</span>
+              <!-- TODO: Replace with actual email address -->
+              <a href="mailto:kontakt@kosteon.pl" class="contact__link">kontakt@kosteon.pl</a>
+            </li>
+            <li class="contact__item">
+              <span class="contact__icon" aria-hidden="true">☎</span>
+              <!-- TODO: Replace with actual phone number -->
+              <a href="tel:+48500000000" class="contact__link">+48 500 000 000</a>
+            </li>
+          </ul>
+          <p class="contact__hours">Mon–Fri&nbsp; 8:00–20:00 &nbsp;·&nbsp; Sat&nbsp; 9:00–14:00 &nbsp;·&nbsp; Sun closed</p>
+        </div>
+
+        <div class="contact__map">
+          <!-- TODO: Replace src with the actual Google Maps embed URL from Google Maps → Share → Embed a map -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.35438582384!2d20.929100699999998!3d52.2319581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a688bae3f!2sWarsaw!5e0!3m2!1sen!2spl!4v1716000000000!5m2!1sen!2spl"
+            title="Kosteon clinic location"
+            class="contact__iframe"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p class="footer__copyright">© 2026 Kosteon. All rights reserved.</p>
+        <div class="footer__social">
+          <!-- TODO: Replace href="#" with the actual Instagram profile URL -->
+          <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Kosteon on Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+          </a>
+          <!-- TODO: Replace href="#" with the actual Facebook page URL -->
+          <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Kosteon on Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
