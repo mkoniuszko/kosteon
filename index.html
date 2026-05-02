@@ -223,60 +223,73 @@
     <div class="container">
       <p class="eyebrow">SPECJALIŚCI</p>
       <h2 class="section-heading">Nasz zespół</h2>
-      <div class="team__grid">
+      <div class="team__carousel-wrapper">
+        <div class="team__carousel">
+          <button class="team__btn team__btn--prev" aria-label="Poprzedni">‹</button>
+          <div class="team__track-clip">
+            <div class="team__track" id="teamTrack">
 
-        <article class="team__card">
-          <!-- TODO: Replace with actual therapist photo (3:4, compressed JPEG) -->
-          <img
-            src="assets/images/hero-therapist.svg"
-            alt="Klaudia Kowalska — fizjoterapeuta Kosteon"
-            class="team__photo"
-            width="200"
-            height="200"
-            loading="lazy"
-          >
-          <div class="team__info">
-            <h3 class="team__name">Klaudia Kowalska</h3>
-            <p class="team__title">Fizjoterapeuta · Terapia manualna</p>
-            <!-- TODO: Replace href with actual Booksy / ZnanyLekarz profile URL -->
-            <a href="#booking" class="btn btn--primary">Umów wizytę →</a>
+              <article class="team__card">
+                <!-- TODO: Replace with actual therapist photo (3:4, compressed JPEG) -->
+                <img
+                  src="assets/images/hero-therapist.svg"
+                  alt="Klaudia Kowalska — fizjoterapeuta Kosteon"
+                  class="team__photo"
+                  width="200"
+                  height="200"
+                  loading="lazy"
+                >
+                <div class="team__info">
+                  <h3 class="team__name">Klaudia Kowalska</h3>
+                  <p class="team__title">Fizjoterapeuta · Terapia manualna</p>
+                  <!-- TODO: Replace href with actual Booksy / ZnanyLekarz profile URL -->
+                  <a href="#booking" class="btn btn--primary">Umów wizytę →</a>
+                </div>
+              </article>
+
+              <article class="team__card">
+                <!-- TODO: Replace with actual therapist photo -->
+                <img
+                  src="assets/images/about-therapist.svg"
+                  alt="Jan Nowak — fizjoterapeuta sportowy Kosteon"
+                  class="team__photo"
+                  width="200"
+                  height="200"
+                  loading="lazy"
+                >
+                <div class="team__info">
+                  <h3 class="team__name">Jan Nowak</h3>
+                  <p class="team__title">Fizjoterapeuta sportowy · Rehabilitacja</p>
+                  <a href="#booking" class="btn btn--primary">Umów wizytę →</a>
+                </div>
+              </article>
+
+              <article class="team__card">
+                <!-- TODO: Replace with actual therapist photo -->
+                <img
+                  src="assets/images/hero-therapist.svg"
+                  alt="Anna Wiśniewska — specjalista rehabilitacji Kosteon"
+                  class="team__photo"
+                  width="200"
+                  height="200"
+                  loading="lazy"
+                >
+                <div class="team__info">
+                  <h3 class="team__name">Anna Wiśniewska</h3>
+                  <p class="team__title">Specjalista rehabilitacji · Igłowanie</p>
+                  <a href="#booking" class="btn btn--primary">Umów wizytę →</a>
+                </div>
+              </article>
+
+            </div>
           </div>
-        </article>
-
-        <article class="team__card">
-          <!-- TODO: Replace with actual therapist photo -->
-          <img
-            src="assets/images/about-therapist.svg"
-            alt="Jan Nowak — fizjoterapeuta sportowy Kosteon"
-            class="team__photo"
-            width="200"
-            height="200"
-            loading="lazy"
-          >
-          <div class="team__info">
-            <h3 class="team__name">Jan Nowak</h3>
-            <p class="team__title">Fizjoterapeuta sportowy · Rehabilitacja</p>
-            <a href="#booking" class="btn btn--primary">Umów wizytę →</a>
-          </div>
-        </article>
-
-        <article class="team__card">
-          <!-- TODO: Replace with actual therapist photo -->
-          <img
-            src="assets/images/hero-therapist.svg"
-            alt="Anna Wiśniewska — specjalista rehabilitacji Kosteon"
-            class="team__photo"
-            width="200"
-            height="200"
-            loading="lazy"
-          >
-          <div class="team__info">
-            <h3 class="team__name">Anna Wiśniewska</h3>
-            <p class="team__title">Specjalista rehabilitacji · Igłowanie</p>
-            <a href="#booking" class="btn btn--primary">Umów wizytę →</a>
-          </div>
-        </article>
-
+          <button class="team__btn team__btn--next" aria-label="Następny">›</button>
+        </div>
+        <div class="team__dots" id="teamDots">
+          <button class="team__dot team__dot--active" aria-label="Karta 1"></button>
+          <button class="team__dot" aria-label="Karta 2"></button>
+          <button class="team__dot" aria-label="Karta 3"></button>
+        </div>
       </div>
     </div>
   </section>
@@ -358,7 +371,7 @@
     </div>
   </section>
 
-  <!-- ── Kontakt / Footer ───────────────────────────────────── -->
+  <!-- ── Footer ────────────────────────────────────────────── -->
   <footer class="site-footer" id="contact">
     <div class="container">
       <div class="footer__cols">
@@ -367,6 +380,15 @@
           <p class="footer__col-label">Nasza Lokalizacja</p>
           <!-- TODO: Replace with actual clinic address -->
           <p class="footer__col-text">ul. Przykładowa 12<br>00-001 Warszawa</p>
+          <!-- TODO: Replace src with the actual Google Maps embed URL from Google Maps → Share → Embed a map -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.35438582384!2d20.929100699999998!3d52.2319581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a688bae3f!2sWarsaw!5e0!3m2!1spl!2spl!4v1716000000000!5m2!1spl!2spl"
+            title="Lokalizacja kliniki Kosteon"
+            class="footer__map"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
 
         <div class="footer__col">
@@ -467,6 +489,36 @@
       modal.querySelector('.service-modal__cta').addEventListener('click', closeModal);
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && !modal.hidden) closeModal();
+      });
+    })();
+
+    (function () {
+      var track = document.getElementById('teamTrack');
+      var dots  = document.querySelectorAll('.team__dot');
+      var cards = track ? track.querySelectorAll('.team__card') : [];
+      var current = 0;
+      var MOBILE_BP = 767;
+
+      function isMobile() { return window.innerWidth <= MOBILE_BP; }
+
+      function goTo(index) {
+        current = (index + cards.length) % cards.length;
+        track.style.transform = isMobile()
+          ? 'translateX(-' + (current * 100) + '%)'
+          : '';
+        dots.forEach(function (d, i) {
+          d.classList.toggle('team__dot--active', i === current);
+        });
+      }
+
+      window.addEventListener('resize', function () {
+        if (!isMobile()) track.style.transform = '';
+      });
+
+      document.querySelector('.team__btn--prev').addEventListener('click', function () { goTo(current - 1); });
+      document.querySelector('.team__btn--next').addEventListener('click', function () { goTo(current + 1); });
+      dots.forEach(function (dot, i) {
+        dot.addEventListener('click', function () { goTo(i); });
       });
     })();
   </script>
