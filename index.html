@@ -518,6 +518,16 @@
         if (!isMobile()) track.style.transform = '';
       });
 
+      var clip = track.parentElement;
+      var touchStartX = 0;
+      clip.addEventListener('touchstart', function (e) {
+        touchStartX = e.touches[0].clientX;
+      }, { passive: true });
+      clip.addEventListener('touchend', function (e) {
+        var delta = e.changedTouches[0].clientX - touchStartX;
+        if (Math.abs(delta) > 50) goTo(current + (delta < 0 ? 1 : -1));
+      }, { passive: true });
+
       document.querySelector('.team__btn--prev').addEventListener('click', function () { goTo(current - 1); });
       document.querySelector('.team__btn--next').addEventListener('click', function () { goTo(current + 1); });
       dots.forEach(function (dot, i) {
